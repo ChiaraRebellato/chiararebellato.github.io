@@ -5,17 +5,17 @@
 
 @font-face {
   font-family: Nexa;
-  src: url(projects/20.10-longLiveVinyl/fonts/NexaRustScript/NexaRustScriptB-Trial-3.ttf);
+  src: url(20.10-longLiveVinyl/fonts/NexaRustScript/NexaRustScriptB-Trial-3.ttf);
 }
 
 @font-face {
   font-family: Pearl;
-  src: url(projects/6.11-SkinNaturals/fonts/TAN-PEARL.otf);
+  src: url(6.11-SkinNaturals/fonts/TAN-PEARL.otf);
 }
 
 @font-face {
   font-family: Lust;
-  src: url(projects/17.11-easyBaking/fonts/lust-display-didone.otf);
+  src: url(17.11-easyBaking/fonts/lust-display-didone.otf);
 }
 
 html,
