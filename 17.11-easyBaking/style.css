@@ -325,6 +325,15 @@ input[type="submit"]:hover {
     color: rgb(167, 156, 142);
 }
 
+input[type="submit"]:disabled {
+    background-color: rgb(186, 184, 184) !important;
+    color: gray;
+}
+
+input[type="submit"] {
+    padding: 1rem 1.2rem !important;
+}
+
 /* enroll.html */
 
 .form-floating>label {
@@ -595,11 +604,6 @@ footer p {
 
     .teamContainer {
         width: 80%;
-    }
-
-
-    input[type="submit"] {
-        padding: 1rem 1.5rem !important;
     }
 
     .faqs,
