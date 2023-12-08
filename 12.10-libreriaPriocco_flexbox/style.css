@@ -1,0 +1,265 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html{
+  font-size: 16px;
+}
+
+body {
+  background-color: rgba(249, 240, 218, 0.6);
+  font-family: "Cormorant Garamond", serif;
+}
+
+header {
+  padding: 0.313rem 1.25rem 0.938rem 1.25rem;
+  background-color: #a3c3c4;
+}
+
+#headerMenu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h2,
+#imgChiSiamo span {
+  font-family: "Homemade Apple", cursive;
+  font-weight: lighter;
+}
+
+header h2 span {
+  word-spacing: 0.25rem;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 0 auto;
+  /* grow=1; shrink=0; flex-basis:auto 
+    impedisce al menu di sballarsi e di ridimensionarsi (facendo cadere nella linea di sotto del contenuto
+    */
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+nav li a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #031926;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0;
+  text-underline-offset: 0.25rem;
+}
+
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+  background-color: #a3c3c4;
+}
+
+#books {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#books img {
+  width: 100%;
+}
+
+#introText {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 1.875rem;
+}
+
+#introText p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#introText p span {
+  text-decoration: underline 0;
+  text-underline-offset: 0.125rem;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem;
+  
+}
+
+.content {
+  width: 90%;
+}
+
+.content p {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.content h3 {
+  font-size: 1.563rem;
+  color: #468189;
+}
+
+#imgChiSiamo,
+#eventsImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#imgChiSiamo img {
+  filter: drop-shadow(10px 10px #072739);
+}
+
+hr {
+  width: 75%;
+}
+
+#imgChiSiamo p {
+  font-size: 1.3rem;
+}
+
+#imgChiSiamo span {
+  font-size: 1.5rem;
+}
+
+#eventsImg figure,
+#imgChiSiamo img {
+  margin: 0.625rem 1.875rem;
+}
+
+#eventsImg{
+  position: relative;
+  left: 1.563rem;
+}
+
+#eventsImg img {
+  border: 0.625rem solid #072739;
+  padding: 0.313rem;
+  width: 70%;
+}
+
+#eventsImg figcaption{
+  font-size: 1.3rem;
+}
+
+#contact .content h3{
+  text-align: center;
+}
+
+#address p{
+  margin: auto 0.625rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+#topOfPage {
+  text-align: center;
+}
+
+#topOfPage a, #address a {
+  color: #031926;
+}
+
+footer {
+  background-color: #a3c3c4;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+footer p{
+  flex: 1 0 auto;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 480px), (max-width: 768px) {
+
+  #headerMenu{
+    display: block;
+  }
+
+  #headerMenu h2{
+    text-align: center;
+    position: relative;
+    left: 0.313rem;
+    font-size: 1.5rem;
+  }
+  
+  nav{
+    display: block;
+    text-align: center;
+    position: relative;
+    right: 1.563rem;
+  }
+
+  #introText p, #imgChiSiamo p {
+    font-size: 1.2rem;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+    line-height: 1.5em;
+    position: relative;
+    top: 0.625rem;
+  }
+
+  .content h3 {
+    font-size: 1.3rem;
+  }
+
+  #imgChiSiamo img{
+    width: 80%;
+    margin: 1.25rem;
+  }
+
+  #imgChiSiamo span {
+    font-size: 1.2rem;
+  }
+
+  #eventsImg{
+    margin-top: 1.875rem;
+
+  }
+
+  #eventsImg img{
+    width: 70%;
+  }
+
+  #imgChiSiamo, #eventsImg {
+    flex-wrap: wrap;
+  }
+
+}
+
+

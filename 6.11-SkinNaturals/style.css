@@ -1,0 +1,537 @@
+@font-face {
+    font-family: Pearl;
+    src: url(fonts/TAN-PEARL.otf);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+a {
+    color: rgb(18, 18, 18);
+}
+
+p {
+    margin: 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, ">") !important;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    border-color: transparent !important;
+}
+
+#promo {
+    background-color: #dbeae2;
+}
+
+.container-fluid {
+    --bs-gutter-x: 0 !important;
+}
+
+.navbar-brand {
+    font-family: Pearl;
+}
+
+.navbar-toggler {
+    padding-right: 0 !important;
+    margin-right: 0.4rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-thickness: 0.05rem;
+    text-underline-offset: 0.3rem;
+}
+
+.cart {
+    position: relative;
+    top: -0.15rem;
+    margin-right: 0 !important;
+}
+
+.loginIcon,
+.cart {
+    cursor: pointer;
+}
+
+.headerBanner {
+    background-image: url(img/headerBannerMobile.webp);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.headerBanner h3 span {
+    font-family: Pearl;
+}
+
+.btn,
+.btn:hover {
+    background-color: #dbeae2;
+}
+
+#companyInfo {
+    background-image: url(img/productsListMobile.webp);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+#featuredProducts {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+}
+
+#featuredProducts img {
+    width: 100%;
+}
+
+#featuredProducts a:hover,
+.shopProducts a:hover, #shopForm input[type="submit"]:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.5s ease-out 0s;
+}
+
+
+/* about.html */
+.aboutUsBanner {
+    background-image: url(img/aboutMobile.webp);
+    background-position: center;
+    background-size: 100%;
+    height: 500px;
+}
+
+.aboutUsBanner h2 {
+    padding-top: 4rem;
+    font-size: 1.3rem;
+}
+
+.certified {
+    width: 5rem;
+    height: 5rem;
+}
+
+.companyInfoDesc, .aboutUsDescr, .mission, .vision{
+    line-height: 2rem;
+}
+
+
+/* login.html */
+
+#loginBanner {
+    background-image: url(img/organic.webp);
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+#login fieldset legend {
+    font-size: 1rem;
+}
+
+
+/* contactUs.html */
+
+#contactBanner {
+    background-image: url(img/companyOverlay.webp);
+    object-fit: cover;
+    background-position: bottom;
+    background-size: cover;
+    height: 170px;
+}
+
+#messageForm label {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+
+/* shop.html */
+
+.shopFilter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.shopProducts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+    column-gap: 1rem;
+}
+
+.shopProducts img {
+    width: 100%;
+}
+
+
+/* product.html */
+.productCover img{
+    width: 70%;
+}
+
+.product div>.text-muted {
+    font-size: 0.8rem;
+}
+
+.certifications img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.productDescr p {
+    font-size: 0.9rem;
+}
+
+.components p {
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color: #dbeae2;
+}
+
+#submitButton {
+    position: relative;
+    float: right;
+    bottom: 2.7rem;
+    margin-right: 0.7rem;
+    border: none;
+    background: none;
+    z-index: 5;
+}
+
+#floatingInputLabel {
+    font-size: 0.8rem;
+    margin-top: 0.15rem;
+}
+
+.payment img {
+    width: 3rem;
+    margin: auto 1rem;
+}
+
+#newsletter {
+    margin-top: 0.5rem;
+}
+
+#newsletter fieldset legend {
+    font-size: 1rem !important;
+}
+
+#newsletterForm {
+    width: 85%;
+    margin: 0 auto;
+}
+
+footer .payment {
+    margin: 2rem 0.2rem 0 0.2rem;
+}
+
+footer .payment img {
+    width: 2.3rem;
+}
+
+.footerNav p {
+    font-size: 0.9rem;
+}
+
+.footerNav a {
+    font-size: 0.7rem;
+}
+
+#social p {
+    font-size: 0.8rem;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+
+@media only screen and (min-width:500px) {
+
+    #offcanvasNavbarLabel {
+        display: none;
+    }
+
+    .offcanvas-header {
+        position: relative;
+        top: 1rem;
+    }
+
+    .offcanvasNavbarBtn {
+        position: relative;
+        left: 92%;
+        top: 1rem;
+    }
+
+    #featuredProducts {
+        gap: 4rem;
+    }
+
+    #featuredProducts img {
+        width: 60%;
+    }
+
+
+    #shopForm input[type="submit"] {
+        width: 50% !important;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footerNav p {
+        font-size: 1rem;
+    }
+
+    .footerNav a {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width:574px) {
+    .headerBanner {
+        background-image: url(img/headerBannerMobile.webp);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+    }
+
+    #featuredProducts img {
+        width: 40%;
+    }
+
+    .aboutUsBanner {
+        background-image: url(img/aboutBanner.webp);
+        background-position: left;
+        background-size: cover;
+    }
+
+    .aboutUsBanner h2 {
+        text-align: end !important;
+        padding: 10%;
+    }
+
+    .mission img,
+    .vision img {
+        width: 60% !important;
+    }
+
+    .shopProducts img {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+
+    .navbar-brand {
+        font-size: 1.6rem !important;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .cart svg,
+    .loginIcon svg {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .headerBanner {
+        background-image: url(img/header5.webp);
+        background-position: right;
+        height: 600px;
+        text-align: start !important;
+        padding: 10% !important;
+    }
+
+    .headerBanner h2 {
+        margin-bottom: 1rem !important;
+
+    }
+
+    #companyInfo {
+        background-image: none;
+        background-color: #dee3ee99;
+        height: 600px;
+    }
+
+    .companyInfoDesc p {
+        text-align: justify;
+    }
+
+    .imgs img {
+        width: 30%;
+    }
+
+    #featuredProducts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    #featuredProducts img {
+        width: 70%;
+    }
+
+    #loginBanner {
+        height: 500px;
+        width: 50%;
+    }
+
+    #contactBanner {
+        background-image: url(img/company.webp);
+        background-position: right;
+        object-fit: cover;
+        height: 650px;
+        width: 40%;
+    }
+
+    .contactInfo {
+        width: 50%;
+    }
+
+    .loginForm {
+        width: 50%;
+    }
+
+    #floatingInputLabel {
+        font-size: 0.9rem;
+    }
+
+    .shopProducts img {
+        width: 60%;
+    }
+
+    .productCover img{
+        width: 15rem;
+    }
+
+    #shopForm #quantity {
+        display: flex;
+    }
+
+    #shopForm input[type="submit"] {
+        width: 70% !important;
+        height: 3rem;
+    }
+
+    #shopForm input[type="number"]{
+        height: 3rem;
+        position: relative;
+        top: 1rem;
+    }
+
+    footer .payment img {
+        width: 3rem;
+    }
+
+    #social p {
+        text-align: start !important;
+    }
+
+    #social svg {
+        width: 1.4rem !important;
+        height: 1.4rem !important;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .companyInfoDesc>div {
+        height: 50% !important;
+    }
+
+    #companyInfo {
+        height: auto;
+    }
+
+    .aboutUsDescr{
+        font-size: 1.1rem;
+    }
+
+    .mission img,
+    .vision img {
+        width: 50% !important;
+    }
+
+    .shopProducts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .shopProducts img {
+        width: 70%;
+    }
+
+    .productCover img{
+        width: 90% !important;
+    }
+
+    .product {
+        width: 40%;
+        margin-left: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 1100px) {
+    #featuredProducts {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+
+    #featuredProducts img {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .shopProducts {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

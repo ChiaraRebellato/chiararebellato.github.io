@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f26324;
+      }
+
+      .cls-2 {
+        fill: #f59e21;
+      }
+
+      .cls-3 {
+        fill: #e92328;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #ffffff;
+      }
+
+      .cls-6 {
+        opacity: 0;
+      }
+    </style>
+  </defs>
+  <g id="Payment-Methods">
+    <g id="mastercard-light-large">
+      <rect class="cls-5" width="48" height="32" rx="4" ry="4"/>
+      <g>
+        <g class="cls-6">
+          <rect class="cls-4" x="4.65" y="3.2" width="38.71" height="25.6"/>
+        </g>
+        <rect class="cls-1" x="18.9" y="7.66" width="10.21" height="16.68"/>
+        <path class="cls-3" d="M20,16c-.02-3.25,1.46-6.32,4-8.34-4.35-3.42-10.6-2.92-14.35,1.14-3.75,4.06-3.75,10.33,0,14.4,3.75,4.06,10,4.56,14.35,1.14-2.54-2.02-4.02-5.09-4-8.34Z"/>
+        <path class="cls-2" d="M40.14,22.57v-.34h.15v-.07h-.35v.07h.14v.34h.06Zm.68,0v-.41h-.1l-.12,.29-.13-.29h-.1v.41h.07v-.31l.12,.27h.08l.11-.27v.31h.07Z"/>
+        <path class="cls-2" d="M41.16,16c0,4.06-2.32,7.76-5.97,9.54-3.65,1.77-7.99,1.31-11.19-1.2,4.6-3.62,5.4-10.29,1.78-14.89-.52-.67-1.12-1.27-1.78-1.79,3.19-2.51,7.54-2.97,11.19-1.2,3.65,1.77,5.97,5.48,5.97,9.54h0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

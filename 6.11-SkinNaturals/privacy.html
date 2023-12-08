@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="rgb(219, 234, 226)">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> SkinNaturals | Privacy </title>
+</head>
+
+<body>
+    <header>
+
+        <div id="promo" class="p-2 d-flex">
+
+            <p class="text-center flex-grow-1">Free shipping over $50</p>
+
+        </div>
+
+        <div class="d-flex align-items-center my-2 mx-3">
+            <nav class="navbar navbar-expand-md flex-grow-1" role="menu" aria-label="Menu">
+                <div class="container-fluid justify-content-start">
+
+                    <a class="navbar-brand fs-5 flex-grow-1 flex-md-grow-0" href="index.html" tabindex="0" target="_self">SkinNaturals</a>
+
+                    <button class="navbar-toggler border-0 me-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">SkinNaturals
+                            </h5>
+                            <button type="button" class="btn-close offcanvasNavbarBtn" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav flex-md-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link" role="menuitem" href="index.html" title="Home"
+                                        tabindex="0" target="_self">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" role="menuitem" href="about.html" title="About Us"
+                                        tabindex="0" target="_self">ABOUT US</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" role="menuitem" href="shop.html" title="Shop"
+                                        tabindex="0" target="_self">SHOP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-2 d-md-none" role="menuitem" href="login.html" title="Sign In"
+                                        tabindex="0" target="_self">SIGN IN</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </nav>
+
+            <!-- login icon -->
+            <div class="loginIcon d-none d-md-inline me-3">
+                <a href="login.html" title="Login" tabindex="0" target="_self">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewbox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                        <path fill-rule="evenodd"
+                            d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- shopping cart -->
+            <div>
+                <button class="cart navbar-toggler border-0" type="button" data-bs-toggle="#shoppingCart"
+                    data-bs-target="#shoppingCart" aria-controls="shoppingCart" aria-label="Toggle navigation">
+                    <svg data-bs-toggle="offcanvas" type="button" data-bs-target="#shoppingCart"
+                        aria-controls="shoppingCart" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        fill="currentColor" viewbox="0 0 16 16">
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                    </svg>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="shoppingCart"
+                    aria-labelledby="shoppingCartLabel">
+
+                    <div class="offcanvas-header">
+
+                        <h5 class="offcanvas-title fw-bold" id="shoppingCartLabel">Your Shopping Cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                    </div>
+
+                    <div class="offcanvas-body shoppingCartBody">
+
+                        <div class="d-flex justify-content-center my-5">
+                            <p class="me-5">Product 1</p>
+                            <p>$ 00.00</p>
+                        </div>
+
+                        <div class="d-flex justify-content-center my-5">
+                            <p class="me-5">Product 1</p>
+                            <p>$ 00.00</p>
+                        </div>
+
+                        <div class="d-flex justify-content-center my-5">
+                            <p class="me-5">Product 1</p>
+                            <p>$ 00.00</p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn" tabindex="0" target="_self">Check-out</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#main" class="skip" title="Skip to main content" tabindex="-1" target="_self">Skip to main content</a>
+
+    </header>
+
+    <main>
+        <section class="p-4 m-4 p-md-5 d-flex justify-content-center">
+
+            <div class="statement">
+
+                <h1 class="mb-4 fs-4">Privacy &#38; Cookie Policy</h1>
+
+                <p>The trust of our customers is also very important to us in the area of data protection and the
+                    protection of your data is a very important concern for us. We therefore work exclusively on the
+                    basis of legal regulations (DSGVO, TKG 2003). In this data protection information, we inform you
+                    about the most important aspects of data processing on our website.</p>
+                <p>&nbsp;</p>
+                <p>The following declaration is intended to inform you about the storage of data, the type of data
+                    and their purpose.</p>
+
+                <hr class="w-75 mx-auto my-5">
+
+                <h2 class="fs-4">Data processing</h2>
+
+                <p>We would like to point out that, for the purpose of simplifying the purchase process and for the
+                    subsequent execution of the contract, the webshop operator stores the IP data of the connection
+                    owner by means of cookies, as well as the first name, surname, address, e-mail address, credit
+                    card number of the buyer. Similarly, personal data of the customer will be passed on to partners
+                    such as transport companies/shipping companies or payment service providers/bank institutions
+                    with regard to the processing of the shipment or payment, but only to the extent necessary to
+                    process the order or the delivery of the goods.</p>
+                <p>&nbsp;</p>
+                <p>In addition, the following data is also stored by us for the purpose of contract processing:
+                    first name, surname, e-mail address, address. The data provided by you is necessary for the
+                    fulfilment of the contract or for carrying out pre-contractual measures. We cannot conclude the
+                    contract without this data. Data will not be transferred to third parties, except for the
+                    transmission of credit card data to the processing banks/payment service providers for the
+                    purpose of debiting the purchase price and to the transport company/shipping company
+                    commissioned by us for the delivery of the goods.</p>
+                <p>&nbsp;</p>
+                <p>After termination of the purchase process, the data stored by us will be deleted. In the event of
+                    a contract being concluded, all data from the contractual relationship will be stored until
+                    expiry of the statutory retention periods. The data such as first name, surname, address, e-mail
+                    address, purchased goods and date of purchase are also stored until expiry of product liability
+                    (10 years).</p>
+                <p>&nbsp;</p>
+                <p>In addition, in accordance with the applicable data protection law, we grant the customer the
+                    right to free information about his or her stored data and, if applicable, the right to correct,
+                    block or delete these data. In this regard, inquiries can be addressed to the e-mail address
+                    hello@vielo.com Insofar as the personal data stored by the customer is incorrect, a correction
+                    will be made without delay, on the customer's corresponding notice.</p>
+                <p>&nbsp;</p>
+                <p>Any personal data of the customer that goes beyond the data protection declaration described
+                    above and is transmitted to vielö will not be passed on or made available to third parties
+                    without the customer's separate written consent, unless this is mandatory due to legal or
+                    official regulations.</p>
+                <p>&nbsp;</p>
+                <p>Data processing is carried out on the basis of the legal provisions of § 96 Paragraph 3 TKG as
+                    well as Art 6 Paragraph 1 lit a (agreement) and/or lit b (necessary for the fulfilment of the
+                    contract) of the DSGVO.</p>
+                <p>&nbsp;</p>
+                <p>This data protection declaration can be viewed and accessed at any time on the www.vieloe.com
+                    website under Data protection.</p>
+
+                <hr class="w-75 mx-auto my-5">
+
+                <h2 class="fs-4">Use of Cookies</h2>
+
+                <p>Our website uses so-called cookies. These are small text files that are stored on your mobile
+                    device using the browser. They won't do any harm. We use cookies to make our offer user-friendly
+                    and to facilitate the electronic ordering process when you visit our website. Some cookies
+                    remain stored on your mobile device until you delete them. They enable us to recognize your
+                    browser the next time you visit our website.</p>
+                <p>&nbsp;</p>
+                <p>If you do not wish this to happen, you can set up your browser so that it informs you about the
+                    setting of cookies and allows you to do so only in individual cases.</p>
+                <p>&nbsp;</p>
+                <p>When cookies are deactivated, the functionality of our website may be restricted.</p>
+
+                <hr class="w-75 mx-auto my-5">
+
+                <h2 class="fs-4">Declaration of consent to receive promotional e-mails</h2>
+
+                <p>If the customer consents to this by visiting our website or otherwise subscribing to our
+                    journal/newsletter, he agrees to receive our company's news about our products, current offers
+                    and other company-related information by means of advertising e-mail, in particular
+                    journal/newsletter. In order to provide you with targeted information, we also collect and
+                    process voluntary information such as date of birth and telephone number.</p>
+                <p>&nbsp;</p>
+                <p>As soon as you have registered for the journal, we will send you a confirmation e-mail with a
+                    link to confirm your registration.</p>
+
+                <hr class="w-75 mx-auto my-5">
+
+                <h2 class="fs-4">Revocation to receive advertising e-mails</h2>
+
+                <p>The customer may revoke his or her consent to receive such e-mails at any time by unsubscribing
+                    from the journal (link to unsubscribe at the end of the journal/newsletter). We will then
+                    immediately delete your data in connection with the journal dispatch.</p>
+
+                <hr class="w-75 mx-auto my-5">
+
+                <h2 class="fs-4">Google Analytics</h2>
+
+                <p>Our website uses Google Analytics, a web analysis service provided by Google Inc. Google Inc. of
+                    1600 Amphitheatre Parkway, Mountain View, CA 94043, USA (hereinafter "Google"). Google Analytics
+                    uses "cookies", which are text files placed on your computer, to help the website analyze how
+                    users use the site. The information generated by the cookie about your use of this website is
+                    usually transferred to a Google server in the USA and stored there. However, if you enable IP
+                    anonymization on this website, your Google IP address will be previously truncated by Google
+                    within Member States of the European Union or in other contracting states of the EEA Agreement.
+                    Only in exceptional cases the full IP address is transferred to a Google server in the USA and
+                    shortened there. On behalf of the operator of this website, Google will use this information to
+                    evaluate your use of the website, to compile reports on website activity and to provide the
+                    website operator with further services associated with website and internet use. The IP address
+                    transmitted by your browser within the scope of Google Analytics will not be merged with other
+                    Google data. You may refuse the use of cookies by selecting the appropriate settings on your
+                    browser, however please note that if you do this you may not be able to use the full
+                    functionality of this website. You can also prevent Google from collecting the data generated by
+                    the cookie and relating to your use of the website (including your IP address) and from
+                    processing this data by Google by downloading and installing the available browser plug-in. We
+                    have concluded an appropriate contract with the provider for order data processing.</p>
+
+
+                <hr class="w-75 mx-auto my-5">
+
+                <h2 class="fs-4">Facebook</h2>
+                
+                <p>When you visit one of our pages that contains such a plugin, your browser establishes a direct
+                    connection to Facebook's servers so that the plugin appears on the website. The content of the
+                    plugin is then sent directly from Facebook to your browser and integrated into the page. The
+                    fact that you have accessed our website (including your IP address) is transmitted to and stored
+                    on Facebook servers in the United States, even if you do not have a profile on Facebook or are
+                    not currently logged in. If you are logged in to Facebook, the data about your visit to our
+                    website can be assigned directly to your profile on Facebook. As soon as you as a logged in
+                    Facebook user actively use the Facebook plugin (e. g. press the "Like" button), this data is
+                    also transferred to the servers and published via your Facebook account. You can prevent this
+                    direct assignment of information to your profile by logging out of your Facebook account.</p>
+                <p>&nbsp;</p>
+            
+                <hr class="w-75 mx-auto my-5">
+
+                <h2 class="fs-4">Instagram</h2>
+
+                <p>This website uses plugins of the online service Instagram, which is operated by Facebook. An
+                    overview of the Instagram plug-ins and their appearance can be found here:</p>
+                <p>&nbsp;</p>
+                <p>If you access one of our pages that contains such a plugin, your browser establishes a direct
+                    connection to the servers of the service so that the plugin appears on the website. Instagram
+                    then sends the content of the plugin directly to your browser and integrates it into the page.
+                    In doing so, the fact that you have accessed our website (including your IP address) is
+                    transmitted to the Facebook related servers in the USA and stored there, even if you do not have
+                    a profile at Instagram or are currently not logged in. If you are logged in to Instagram, the
+                    data can be assigned directly to your Instagram profile by visiting our website. As soon as you
+                    as a logged in Facebook user actively use the Instagram plugin, this data is also transferred to
+                    the servers and published via your Instagram account and displayed to your contacts. You can
+                    prevent this direct assignment of information to your profile by logging out of your Instagram
+                    account.</p>
+                <p>&nbsp;</p>
+                <p>You can completely prevent the loading of Instagram plug-ins by using add-ons for your browser
+                    (e. g. with the Skrpt blocker "NoScript", available at https://noscript.net/).</p>
+                <p>&nbsp;</p>
+
+                <hr class="w-75 mx-auto my-5">
+
+                <h2 class="fs-4">Pinterest</h2>
+
+                <p>On our site we use social plugins of the social network Pinterest, which is operated by Pinterest
+                    Inc., 635 High Street, Palo Alto, CA, 94301, USA ("Pinterest"). When you call up a page that
+                    contains such a plugin, your browser establishes a direct connection to the Pinterest servers.
+                    The plugin transfers log data to the Pinterest server in the USA. This log data may contain your
+                    IP address, the address of the websites visited, which also contain pinterest functions, browser
+                    type and settings, date and time of the request, how you use Pinterest and cookies.</p>
+                <p>&nbsp;</p>
+                <p>For more information on the purpose, scope and further processing and use of the data by
+                    Pinterest, as well as your rights and means of protecting your privacy, please refer to the
+                    Pinterest privacy policy: https://about.pinterest.com/de/privacy-policy.</p>
+
+                <hr class="w-75 mx-auto my-5">
+
+                <h2 class="fs-4">Twitter</h2>
+
+                <p>The Twitter service functions are integrated on our pages. These features are offered by Twitter
+                    Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA. By using Twitter and the
+                    "Re-Tweet" function, the websites you visit will be linked to your Twitter account and made
+                    known to other users. Data is also transferred to Twitter. We would like to point out that, as
+                    the provider of these pages, we are not aware of the content of the transmitted data and their
+                    use by Twitter. For more information, see the Twitter Privacy Policy at
+                    http://twitter.com/privacy. You can change your Twitter privacy settings in your account
+                    settings at http://twitter.com/account/settings</p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-4">
+
+        <div class="d-md-flex mx-md-2">
+
+            <div id="newsletter" class="mt-md-4 order-md-2 mx-md-0">
+
+                <fieldset>
+                    <legend class="fs-6 text-center">Subscribe to our newsletter and receive a surprise</legend>
+
+                    <form action="index.html" enctype="text/plain" id="newsletterForm" autocomplete="on">
+
+                        <div class="form-floating">
+                            <input type="email" class="form-control rounded-0 border-0" id="floatingInputNewsletter"
+                                placeholder="name@example.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                                required>
+                            <label for="floatingInputNewsletter" id="floatingInputLabel">Email address</label>
+                        </div>
+                        <button id="submitButton" type="submit">
+                            <img src="img/arrow-right.svg" alt="Arrow right">
+                        </button>
+                    </form>
+
+                </fieldset>
+
+            </div>
+
+            <div class="footerNav mt-3 mt-md-4 d-md-flex order-md-1 flex-md-grow-1">
+
+                <div class="me-5 mb-4">
+                    <p class="mb-2 fw-bolder">OUR COMPANY</p>
+                    <div class="lh-lg">
+                        <a class="d-block text-decoration-none text-muted" href="about.html" tabindex="0" target="_self"
+                            title="About Us">About Us</a>
+                        <a class="d-block text-decoration-none text-muted" href="terms.html" tabindex="0" target="_self"
+                            title="terms & Conditions">Terms &#38;
+                            Conditions</a>
+                        <a class="d-block text-decoration-none text-muted" href="privacy.html" tabindex="0" target="_self" title="Privacy & Cookie
+                        policy">Privacy &#38; Cookie
+                            policy</a>
+
+                    </div>
+
+                </div>
+
+                <div class="me-5 mb-sm-5">
+
+                    <p class="mb-2 fw-bolder">SUPPORT</p>
+                    <div class="lh-lg">
+                        <a class="d-block text-decoration-none text-muted" href="contact.html" tabindex="0" target="_self"
+                            title="Contact Us">Contact Us</a>
+                        <a class="d-block text-decoration-none text-muted" href="#" tabindex="0" target="_self" title="FAQs">FAQs</a>
+                        <a class="d-block text-decoration-none text-muted" href="#" tabindex="0" target="_self"
+                            title="Shipping & Returns">Shipping &#38; Returns</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="payment d-flex justify-content-center mt-5 mt-md-4">
+
+            <img src="img/mastercard-light-large.svg" alt="Mastercard payment">
+            <img src="img/maestro-light-large.svg" alt="Maestro payment">
+            <img src="img/visa-light-large.svg" alt="Visa payment">
+            <img src="img/paypal-light-large.svg" alt="Paypal payment">
+
+        </div>
+
+        <div id="social" class="pt-4 d-md-flex align-items-center">
+
+            <p class="text-center flex-md-grow-1">© 2023 SkinNaturals. All rights reserved</p>
+
+            <div class="my-1 d-flex justify-content-center">
+
+                <a class="text-decoration-none" href="https://www.instagram.com/" title="SkinNaturals Instagram Profile"
+                    tabindex="0" target="_self">
+                    <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem"
+                        fill="currentColor" viewbox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </a>
+
+                <a class="text-decoration-none" href="https://www.facebook.com/" title="SkinNaturals Facebook Profile"
+                    tabindex="0" target="_self">
+                    <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem"
+                        fill="currentColor" viewbox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </a>
+
+                <a class="text-decoration-none" href="https://www.twitter.com/" title="SkinNaturals X Profile"
+                    tabindex="0" target="_self">
+                    <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem"
+                        fill="currentColor" viewbox="0 0 16 16">
+                        <path
+                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                    </svg>
+                </a>
+
+                <a class="text-decoration-none" href="https://www.tiktok.com/" title="SkinNaturals TikTok Profile"
+                    tabindex="0" target="_self">
+                    <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem"
+                        fill="currentColor" viewbox="0 0 16 16">
+                        <path
+                            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
