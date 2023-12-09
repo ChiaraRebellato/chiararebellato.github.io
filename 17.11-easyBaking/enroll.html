@@ -114,12 +114,23 @@
                                 id="name" placeholder="First Name" pattern="^[a-zA-Z]+" required autofocus
                                 autocomplete="given-name" aria-required="true" ng-model="name">
                             <label for="name" class="fs-6">First Name<sup>*</sup></label>
-                            <div class="mt-1">
-                                <span ng-if="form1.name.$touched && form1.name.$invalid || form1.name.$error.pattern"
-                                    class="text-danger" role="alert">Required and/or invalid field</span>
+                            <div class="mt-1 d-flex align-items-center text-danger"
+                                ng-if="form1.name.$touched && form1.name.$invalid || form1.name.$error.pattern"
+                                role="alert">
+
+                                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                    fill="currentColor" viewbox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                </svg>
+                                <span>
+                                    Required and/or invalid field
+                                </span>
+
                                 <!-- <span ng-show="form1.name.$error.pattern" class="text-danger" role="alert">Il
-                                    campo deve
-                                    contenere solo lettere</span> -->
+                                campo deve
+                                contenere solo lettere</span> -->
                             </div>
                         </div>
 
@@ -128,13 +139,20 @@
                                 name="surname" id="surname" placeholder="Last Name" pattern="^[a-zA-Z]+" required
                                 autofocus autocomplete="family-name" aria-required="true" ng-model="surname">
                             <label for="surname" class="d-block mb-1">Last Name<sup>*</sup></label>
-                            <div class="mt-1">
-                                <span
-                                    ng-show="form1.surname.$touched && form1.surname.$invalid || form1.surname.$error.pattern"
-                                    class="text-danger" role="alert">Required and/or invalid field</span>
+                            <div class="mt-1 d-flex align-items-center text-danger"
+                                ng-if="form1.surname.$touched && form1.surname.$invalid || form1.surname.$error.pattern"
+                                role="alert">
+
+                                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                    fill="currentColor" viewbox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                </svg>
+                                <span>Required and/or invalid field</span>
                                 <!-- <span ng-show="form1.surname.$error.pattern" class="text-danger" role="alert">Il
-                                    campo deve
-                                    contenere solo lettere</span> -->
+                                campo deve
+                                contenere solo lettere</span> -->
                             </div>
                         </div>
                     </div>
@@ -145,10 +163,29 @@
                             autofocus autocomplete="email" aria-required="true" ng-model="email">
                         <label for="email" class="d-block mb-1">Email<sup>*</sup></label>
                         <div class="mt-1">
-                            <span ng-show="form1.email.$error.pattern" class="text-danger d-block"
-                                role="alert">Invalid email</span>
-                            <span ng-show="form1.email.$touched && form1.email.$invalid" class="text-danger"
-                                role="alert">Required and/or invalid field</span>
+
+                            <div class="d-flex align-items-center text-danger" ng-if="form1.email.$error.pattern"
+                                role="alert">
+                                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                    fill="currentColor" viewbox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                </svg>
+                                <span>Invalid email</span>
+                            </div>
+
+                            <div class="d-flex align-items-center text-danger"
+                                ng-if="form1.email.$touched && form1.email.$invalid" role="alert">
+                                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                    fill="currentColor" viewbox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                </svg>
+                                <span>Required field</span>
+                            </div>
+
                         </div>
                     </div>
 
@@ -174,7 +211,7 @@
 
 
                     <div class="my-5 float-end mx-md-4">
-                        <input class="border-0 py-2 px-3" type="submit" value="Enroll Now" ng-disabled="form1.$invalid">
+                        <input class="border-0 py-2 px-3" type="submit" value="Enroll Now" ng-disabled="form1.$invalid" tabindex="0">
                     </div>
 
                 </form>

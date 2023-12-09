@@ -332,6 +332,10 @@ input[type="submit"]:disabled {
 
 input[type="submit"] {
     padding: 1rem 1.2rem !important;
+}       
+
+.text-danger{
+    font-size: 0.9rem !important;
 }
 
 /* enroll.html */
