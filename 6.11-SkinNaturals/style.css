@@ -180,7 +180,13 @@ p {
     margin-top: 0.2rem;
 }
 
+.text-danger{
+    font-size: 0.9rem !important;
+}
 
+#submitButton:disabled img{
+    color: lightgray !important;
+}
 /* shop.html */
 
 .shopFilter {

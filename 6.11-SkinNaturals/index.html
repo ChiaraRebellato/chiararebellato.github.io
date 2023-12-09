@@ -31,7 +31,8 @@
             <nav class="navbar navbar-expand-md flex-grow-1" role="menu" aria-label="Menu">
                 <div class="container-fluid justify-content-start">
 
-                    <a class="navbar-brand fs-5 flex-grow-1 flex-md-grow-0" href="index.html" tabindex="0" target="_self">SkinNaturals</a>
+                    <a class="navbar-brand fs-5 flex-grow-1 flex-md-grow-0" href="index.html" tabindex="0"
+                        target="_self">SkinNaturals</a>
 
                     <button class="navbar-toggler border-0 me-2" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
@@ -56,12 +57,12 @@
                                         tabindex="0" target="_self">HOME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" role="menuitem" href="about.html" title="About Us"
-                                        tabindex="0" target="_self">ABOUT US</a>
+                                    <a class="nav-link" role="menuitem" href="about.html" title="About Us" tabindex="0"
+                                        target="_self">ABOUT US</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" role="menuitem" href="shop.html" title="Shop"
-                                        tabindex="0" target="_self">SHOP</a>
+                                    <a class="nav-link" role="menuitem" href="shop.html" title="Shop" tabindex="0"
+                                        target="_self">SHOP</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link fs-2 d-md-none" role="menuitem" href="login.html" title="Sign In"
@@ -265,7 +266,7 @@
 
     </main>
 
-    <footer class="p-4">
+    <footer class="p-4" ng-app="">
 
         <div class="d-md-flex mx-md-2">
 
@@ -274,17 +275,47 @@
                 <fieldset>
                     <legend class="fs-6 text-center">Subscribe to our newsletter and receive a surprise</legend>
 
-                    <form action="index.html" enctype="text/plain" id="newsletterForm" autocomplete="on">
+                    <form action="index.html" enctype="text/plain" id="newsletterForm" name="newsletterForm"
+                        autocomplete="on" novalidate>
 
                         <div class="form-floating">
                             <input type="email" class="form-control rounded-0 border-0" id="floatingInputNewsletter"
-                                placeholder="name@example.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                                required>
+                                name="floatingInputNewsletter" placeholder="name@example.com"
+                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required
+                                ng-model="floatingInputNewsletter">
                             <label for="floatingInputNewsletter" id="floatingInputLabel">Email address</label>
+
                         </div>
-                        <button id="submitButton" type="submit">
+                        <button id="submitButton" type="submit" ng-disabled="newsletterForm.$invalid">
                             <img src="img/arrow-right.svg" alt="Arrow right">
                         </button>
+                        <div class="mt-1">
+
+                            <div class="d-flex align-items-center text-danger"
+                                ng-if="newsletterForm.floatingInputNewsletter.$error.pattern" role="alert">
+                                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                    fill="currentColor" viewbox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                </svg>
+                                <span>Invalid email</span>
+                            </div>
+
+                            <!-- 
+                            <div class="d-flex align-items-center text-danger"
+                                ng-if="newsletterForm.floatingInputNewsletter.$touched && newsletterForm.floatingInputNewsletter.$invalid"
+                                role="alert">
+                                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                    fill="currentColor" viewbox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                </svg>
+                                <span>Required field</span>
+                            </div>-->
+
+                        </div>
                     </form>
 
                 </fieldset>
@@ -301,7 +332,8 @@
                         <a class="d-block text-decoration-none text-muted" href="terms.html" tabindex="0" target="_self"
                             title="terms & Conditions">Terms &#38;
                             Conditions</a>
-                        <a class="d-block text-decoration-none text-muted" href="privacy.html" tabindex="0" target="_self" title="Privacy & Cookie
+                        <a class="d-block text-decoration-none text-muted" href="privacy.html" tabindex="0"
+                            target="_self" title="Privacy & Cookie
                         policy">Privacy &#38; Cookie
                             policy</a>
 
@@ -313,9 +345,10 @@
 
                     <p class="mb-2 fw-bolder">SUPPORT</p>
                     <div class="lh-lg">
-                        <a class="d-block text-decoration-none text-muted" href="contact.html" tabindex="0" target="_self"
-                            title="Contact Us">Contact Us</a>
-                        <a class="d-block text-decoration-none text-muted" href="#" tabindex="0" target="_self" title="FAQs">FAQs</a>
+                        <a class="d-block text-decoration-none text-muted" href="contact.html" tabindex="0"
+                            target="_self" title="Contact Us">Contact Us</a>
+                        <a class="d-block text-decoration-none text-muted" href="#" tabindex="0" target="_self"
+                            title="FAQs">FAQs</a>
                         <a class="d-block text-decoration-none text-muted" href="#" tabindex="0" target="_self"
                             title="Shipping & Returns">Shipping &#38; Returns</a>
                     </div>
@@ -380,6 +413,8 @@
         </div>
 
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
 
 </body>
 

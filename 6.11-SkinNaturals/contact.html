@@ -8,16 +8,13 @@
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>SkinNaturals | Contact Us</title>
 </head>
 
-<body>
+<body ng-app="">
 
     <header>
 
@@ -31,7 +28,8 @@
             <nav class="navbar navbar-expand-md flex-grow-1" role="menu" aria-label="Menu">
                 <div class="container-fluid justify-content-start">
 
-                    <a class="navbar-brand fs-5 flex-grow-1 flex-md-grow-0" href="index.html" tabindex="0" target="_self">SkinNaturals</a>
+                    <a class="navbar-brand fs-5 flex-grow-1 flex-md-grow-0" href="index.html" tabindex="0"
+                        target="_self">SkinNaturals</a>
 
                     <button class="navbar-toggler border-0 me-2" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
@@ -52,15 +50,16 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav flex-md-grow-1">
                                 <li class="nav-item">
-                                    <a class="nav-link" role="menuitem" href="#" title="Home" tabindex="0" target="_self">HOME</a>
+                                    <a class="nav-link" role="menuitem" href="#" title="Home" tabindex="0"
+                                        target="_self">HOME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" role="menuitem" href="about.html" title="About Us"
-                                        tabindex="0" target="_self">ABOUT US</a>
+                                    <a class="nav-link" role="menuitem" href="about.html" title="About Us" tabindex="0"
+                                        target="_self">ABOUT US</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" role="menuitem" href="shop.html" title="Shop"
-                                        tabindex="0" target="_self">SHOP</a>
+                                    <a class="nav-link" role="menuitem" href="shop.html" title="Shop" tabindex="0"
+                                        target="_self">SHOP</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link fs-2 d-md-none" role="menuitem" href="login.html" title="Sign In"
@@ -154,51 +153,106 @@
                 <div class="contactInfo p-4 py-5 ms-md-4">
                     <h1 class="fs-2 text-center d-none d-md-block">Get in touch</h1>
                     <div class="mb-3">
-                        <p class="fw-bold fs-5">Address</p>
+                        <p class="fw-bold fs-6">Address</p>
                         <p>15 Grand Avenue, Seattle, Washington State</p>
                     </div>
 
                     <div class="mb-3">
-                        <p class="fw-bold fs-5">Telephone</p>
-                        <a class="text-decoration-none" href="tel:122123456" tabindex="0" target="_self">(122)-123456</a>
+                        <p class="fw-bold fs-6">Telephone</p>
+                        <a class="text-decoration-none" href="tel:122123456" tabindex="0"
+                            target="_self">(122)-123456</a>
                     </div>
 
                     <div class="mb-3">
-                        <p class="fw-bold fs-5">Email</p>
-                        <a class="text-decoration-none" href="mailto:hello@skinnaturals.com"
-                            tabindex="0" target="_self">hello@skinnaturals.com</a>
+                        <p class="fw-bold fs-6">Email</p>
+                        <a class="text-decoration-none" href="mailto:hello@skinnaturals.com" tabindex="0"
+                            target="_self">hello@skinnaturals.com</a>
                     </div>
 
                     <hr class="w-75 mx-auto my-5 my-md-4">
 
                     <div class="p-2 ms-md-4">
-                        
+
                         <fieldset>
                             <legend class="fs-5 fw-bold">Leave a message</legend>
 
-                            <form action="#" enctype="text/plain" id="messageForm" autocomplete="on">
+                            <form action="#" enctype="text/plain" id="messageForm" name="messageForm" autocomplete="on">
 
                                 <div class="form-floating mt-5 mb-4">
-                                    <input type="text" class="form-control rounded-0" id="floatingInput1"
-                                        placeholder="Your Name" pattern="^[a-zA-Z]+" required autofocus autocomplete="given-name" aria-required="true">
-                                    <label for="floatingInput1">Name<sup>*</sup></label>
+                                    <input type="text" class="form-control rounded-0" id="name" name="name"
+                                        placeholder="Your Name" pattern="^[a-zA-Z]+" required autofocus
+                                        autocomplete="given-name" aria-required="true" ng-model="name">
+                                    <label for="name">Name<sup>*</sup></label>
+                                    <div class="mt-1 d-flex align-items-center text-danger"
+                                        ng-if="messageForm.name.$touched && messageForm.name.$invalid || messageForm.name.$error.pattern"
+                                        role="alert">
+
+                                        <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                            fill="currentColor" viewbox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                        </svg>
+                                        <span>
+                                            Required and/or invalid field
+                                        </span>
+
+                                        <!-- <span ng-show="messageForm.name.$error.pattern" class="text-danger" role="alert">Il
+                                        campo deve
+                                        contenere solo lettere</span> -->
+                                    </div>
                                 </div>
 
                                 <div class="form-floating mb-4">
-                                    <input type="email" class="form-control rounded-0" id="floatingInput2"
+                                    <input type="email" class="form-control rounded-0" id="surname" name="surname"
                                         placeholder="name@example.com"
-                                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required autofocus autocomplete="email" aria-required="true">
-                                    <label for="floatingInput2">Email address<sup>*</sup></label>
+                                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required autofocus
+                                        autocomplete="email" aria-required="true" ng-model="surname">
+                                    <label for="surname">Email address<sup>*</sup></label>
+                                    <div class="mt-1 d-flex align-items-center text-danger"
+                                        ng-if="messageForm.surname.$touched && messageForm.surname.$invalid || messageForm.surname.$error.pattern"
+                                        role="alert">
+
+                                        <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                            fill="currentColor" viewbox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                        </svg>
+                                        <span>
+                                            Required and/or invalid field
+                                        </span>
+
+                                        <!-- <span ng-show="messageForm.name.$error.pattern" class="text-danger" role="alert">Il
+                                        campo deve
+                                        contenere solo lettere</span> -->
+                                    </div>
                                 </div>
 
                                 <div class="form-floating mb-4">
-                                    <textarea class="form-control rounded-0" name="msg" id="floatingInput3" cols="30"
-                                        rows="20" placeholder="Your Message" required autofocus aria-required="true"></textarea>
-                                    <label for="floatingInput3">Message<sup>*</sup></label>
+                                    <textarea class="form-control rounded-0 h-100" name="msg" id="msg" cols="10" rows="8"
+                                        placeholder="Your Message" required autofocus aria-required="true"
+                                        ng-model="msg"></textarea>
+                                    <label for="msg">Message<sup>*</sup></label>
+                                    <div class="mt-1 d-flex align-items-center text-danger"
+                                        ng-if="messageForm.msg.$touched && messageForm.msg.$error.required"
+                                        role="alert">
+                                        <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                            fill="currentColor" viewbox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                        </svg>
+                                        <span>Required field</span>
+                                    </div>
 
                                 </div>
 
-                                <input class="btn border rounded-0 w-100 py-2 mb-3" type="submit" value="Send Message">
+                                <input class="btn border rounded-0 w-100 py-2 mb-3" type="submit" value="Send Message"
+                                    ng-disabled="messageForm.$invalid" tabindex="0">
 
                             </form>
 
@@ -220,21 +274,51 @@
         <div class="d-md-flex mx-md-2">
 
             <div id="newsletter" class="mt-md-4 order-md-2 mx-md-0">
-
                 <fieldset>
-                    <legend class="text-center">Subscribe to our newsletter and receive a surprise</legend>
+                    <legend class="fs-6 text-center">Subscribe to our newsletter and receive a surprise</legend>
 
-                    <form action="index.html" enctype="text/plain" id="newsletterForm" autocomplete="on">
+                    <form action="index.html" enctype="text/plain" id="newsletterForm" name="newsletterForm"
+                        autocomplete="on" novalidate>
 
                         <div class="form-floating">
                             <input type="email" class="form-control rounded-0 border-0" id="floatingInputNewsletter"
-                                placeholder="name@example.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                                required>
+                                name="floatingInputNewsletter" placeholder="name@example.com"
+                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required
+                                ng-model="floatingInputNewsletter">
                             <label for="floatingInputNewsletter" id="floatingInputLabel">Email address</label>
                         </div>
-                        <button id="submitButton" type="submit">
+
+                        <button id="submitButton" type="submit" ng-disabled="messageForm.$invalid">
                             <img src="img/arrow-right.svg" alt="Arrow right">
                         </button>
+
+                        <div class="mt-1">
+
+                            <div class="d-flex align-items-center text-danger"
+                                ng-if="newsletterForm.floatingInputNewsletter.$error.pattern" role="alert">
+                                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                    fill="currentColor" viewbox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                </svg>
+                                <span>Invalid email</span>
+                            </div>
+
+                            <!-- 
+                            <div class="d-flex align-items-center text-danger"
+                                ng-if="newsletterForm.floatingInputNewsletter.$touched && newsletterForm.floatingInputNewsletter.$invalid"
+                                role="alert">
+                                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                    fill="currentColor" viewbox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                </svg>
+                                <span>Required field</span>
+                            </div>-->
+
+                        </div>
                     </form>
 
                 </fieldset>
@@ -251,7 +335,8 @@
                         <a class="d-block text-decoration-none text-muted" href="terms.html" tabindex="0" target="_self"
                             title="terms & Conditions">Terms &#38;
                             Conditions</a>
-                        <a class="d-block text-decoration-none text-muted" href="privacy.html" tabindex="0" target="_self" title="Privacy & Cookie
+                        <a class="d-block text-decoration-none text-muted" href="privacy.html" tabindex="0"
+                            target="_self" title="Privacy & Cookie
                         policy">Privacy &#38; Cookie
                             policy</a>
 
@@ -263,9 +348,10 @@
 
                     <p class="mb-2 fw-bolder">SUPPORT</p>
                     <div class="lh-lg">
-                        <a class="d-block text-decoration-none text-muted" href="contact.html" tabindex="0" target="_self"
-                            title="Contact Us">Contact Us</a>
-                        <a class="d-block text-decoration-none text-muted" href="#" tabindex="0" target="_self" title="FAQs">FAQs</a>
+                        <a class="d-block text-decoration-none text-muted" href="contact.html" tabindex="0"
+                            target="_self" title="Contact Us">Contact Us</a>
+                        <a class="d-block text-decoration-none text-muted" href="#" tabindex="0" target="_self"
+                            title="FAQs">FAQs</a>
                         <a class="d-block text-decoration-none text-muted" href="#" tabindex="0" target="_self"
                             title="Shipping & Returns">Shipping &#38; Returns</a>
                     </div>
@@ -330,6 +416,12 @@
         </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+
 </body>
 
 </html>
