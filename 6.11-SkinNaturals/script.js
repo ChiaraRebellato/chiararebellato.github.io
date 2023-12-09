@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     // "filtro" per la selezione del genere
 
