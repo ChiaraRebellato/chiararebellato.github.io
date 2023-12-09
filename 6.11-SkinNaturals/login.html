@@ -159,14 +159,14 @@
                         <form action="#" enctype="text/plain" id="signInForm" autocomplete="on">
     
                             <div class="form-floating mt-5 mb-4">
-                                <input type="email" class="form-control" id="floatingInputEmail"
+                                <input type="email" class="form-control rounded-0" id="floatingInputEmail"
                                     placeholder="name@example.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                                     required autofocus autocomplete="email" aria-required="true">
                                 <label for="floatingInputEmail" class="fs-6">Email address<sup>*</sup></label>
                             </div>
     
                             <div class="form-floating mb-5">
-                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                <input type="password" class="form-control rounded-0" id="floatingPassword" placeholder="Password"
                                     required autofocus autocomplete="current-password" aria-required="true">
                                 <label for="floatingPassword" class="fs-6">Password<sup>*</sup></label>
                             </div>
@@ -210,17 +210,47 @@
                 <fieldset>
                     <legend class="text-center">Subscribe to our newsletter and receive a surprise</legend>
 
-                    <form action="index.html" enctype="text/plain" id="newsletterForm" autocomplete="on">
+                    <form action="index.html" enctype="text/plain" id="newsletterForm" name="newsletterForm"
+                        autocomplete="on" novalidate>
 
                         <div class="form-floating">
                             <input type="email" class="form-control rounded-0 border-0" id="floatingInputNewsletter"
-                                placeholder="name@example.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                                required>
+                                name="floatingInputNewsletter" placeholder="name@example.com"
+                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required
+                                ng-model="floatingInputNewsletter">
                             <label for="floatingInputNewsletter" id="floatingInputLabel">Email address</label>
+
                         </div>
-                        <button id="submitButton" type="submit">
+                        <button id="submitButton" type="submit" ng-disabled="newsletterForm.$invalid">
                             <img src="img/arrow-right.svg" alt="Arrow right">
                         </button>
+                        <div class="mt-1">
+
+                            <div class="d-flex align-items-center text-danger"
+                                ng-if="newsletterForm.floatingInputNewsletter.$error.pattern" role="alert">
+                                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                    fill="currentColor" viewbox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                </svg>
+                                <span>Invalid email</span>
+                            </div>
+
+                            <!-- 
+                            <div class="d-flex align-items-center text-danger"
+                                ng-if="newsletterForm.floatingInputNewsletter.$touched && newsletterForm.floatingInputNewsletter.$invalid"
+                                role="alert">
+                                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                    fill="currentColor" viewbox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                </svg>
+                                <span>Required field</span>
+                            </div>-->
+
+                        </div>
                     </form>
 
                 </fieldset>
