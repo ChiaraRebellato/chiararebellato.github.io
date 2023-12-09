@@ -1,12 +1,3 @@
-var appAngular = angular.module("shopProduct", []);
-
-    // controller per product.html
-appAngular.controller("myCtrl", function ($scope) {
-
-    $scope.quantity = 1;
-    // <input type="number" ... /> valore di default definito da Angular
-
-})
 
 $(document).ready(function(){
     // "filtro" per la selezione del genere
@@ -43,3 +34,4 @@ $(document).ready(function(){
         $("#hairDescription").addClass("d-none");
     });
 });
+
