@@ -1,7 +1,7 @@
 
 # "Long Live Vinyls" Website
 
-Responsive website for fictional business based on Seattle based "Easy Street Records" record shop.
+Responsive website for fictional business based on Seattle-based "Easy Street Records" record shop.
 
 ## Color Reference
 
@@ -22,5 +22,6 @@ Responsive website for fictional business based on Seattle based "Easy Street Re
 ## Features
 
 - Responsive Website
-- No Frameworks 
+- Mobile First
+- Bootstrap 
 
