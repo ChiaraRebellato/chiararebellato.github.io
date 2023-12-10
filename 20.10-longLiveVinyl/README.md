@@ -27,5 +27,5 @@ Responsive website for fictional business based on Seattle-based "Easy Street Re
 
 ## Tech Stack
 
-HTML, CSS, JavaScript, Bootstrap
+HTML, CSS, Bootstrap
 
