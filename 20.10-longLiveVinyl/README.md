@@ -21,7 +21,11 @@ Responsive website for fictional business based on Seattle-based "Easy Street Re
 
 ## Features
 
-- Responsive Website
+- Responsive
 - Mobile First
-- Bootstrap 
+- Cross Platform
+
+## Tech Stack
+
+HTML, CSS, JavaScript, Bootstrap
 
