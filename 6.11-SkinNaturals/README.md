@@ -1,7 +1,7 @@
 
 # "SkinNaturals" Website
 
-Fictional baking class website where the users can find out more about pastry classes taught by professional and acclimated pastry chefs.
+Website for fictional skincare company. As of today the website simulates an e-commerce; the ultimate goal is to improve it and to make it a real e-commerce platform.
 
 
 
