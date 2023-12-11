@@ -1,5 +1,5 @@
 
-# "Easy Baking" Website
+# "SkinNaturals" Website
 
 Fictional baking class website where the users can find out more about pastry classes taught by professional and acclimated pastry chefs.
 
@@ -9,9 +9,9 @@ Fictional baking class website where the users can find out more about pastry cl
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| #B7ADA0 | ![#b7ada0](https://via.placeholder.com/10/b7ada0?text=+) #b7ada0 |
-| #A79C8E | ![#a79c8e](https://via.placeholder.com/10/a79c8e?text=+) #a79c8e |
-| #252122 | ![#252122](https://via.placeholder.com/10/252122?text=+) ##252122 |
+| #ECECEC | ![#ececec](https://via.placeholder.com/10/ececec?text=+) #ececec |
+| #DEE3EE99 | ![#dee3ee99](https://via.placeholder.com/10/dee3ee99?text=+) #dee3ee99 |
+| #DBEAE2 | ![#dbeae2](https://via.placeholder.com/10/dbeae2?text=+) #dbeae2 |
 
 
 ## Features

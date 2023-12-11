@@ -14,11 +14,6 @@ Responsive website for fictional business based on Seattle-based "Easy Street Re
 | #19191A | ![#19191a](https://via.placeholder.com/10/19191a?text=+) |
 
 
-## Authors
-
-- [@chiararebellato](https://chiararebellato.github.io)
-
-
 ## Features
 
 - Responsive

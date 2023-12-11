@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    // hover: comparsa info chef
     $('#chef1').hover(function () {
 
         $('#chefInfo1').toggleClass('d-none');
@@ -7,9 +8,9 @@ $(document).ready(function () {
     }
     );
 
-    // overlay on background
+    // background overlay on hover
     $('#chef1').hover(function () {
-        // hover
+        // hover: backgroundImg con overlay colorato
 
         $('#chef1').css({
             "background": "linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/amaury.webp)",
@@ -18,15 +19,15 @@ $(document).ready(function () {
         );
 
     }, function () {
-        // out
+        // out: backgroundImg originale
         $('#chef1').css({
             "background": "url(img/amaury.webp)",
             "background-size": "cover"
         }
         );
 
-    }
-);
+        }
+    );
 
 
 $('#chef2').hover(function () {
