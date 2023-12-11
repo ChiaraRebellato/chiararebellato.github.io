@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: Nexa;
-  src: url(20.10-longLiveVinyl/fonts/NexaRustScript/NexaRustScriptB-Trial-3.ttf);
+  src: url(20.10-longLiveVinyls/fonts/NexaRustScript/NexaRustScriptB-Trial-3.ttf);
 }
 
 @font-face {
@@ -28,6 +28,15 @@ body {
 html {
   font-size: 16px;
   
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 body{
