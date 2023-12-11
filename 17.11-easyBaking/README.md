@@ -9,9 +9,9 @@ Fictional baking class website where the users can find out more about pastry cl
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#b7ada0](https://via.placeholder.com/10/b7ada0?text=+) #b7ada0 |
-| Example Color | ![#a79c8e](https://via.placeholder.com/10/a79c8e?text=+) #a79c8e |
-| Example Color | ![#252122](https://via.placeholder.com/10/252122?text=+) ##252122 |
+| #B7ADA0 | ![#b7ada0](https://via.placeholder.com/10/b7ada0?text=+) #b7ada0 |
+| #A79C8E | ![#a79c8e](https://via.placeholder.com/10/a79c8e?text=+) #a79c8e |
+| #252122 | ![#252122](https://via.placeholder.com/10/252122?text=+) ##252122 |
 
 
 ## Tech Stack
