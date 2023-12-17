@@ -8,16 +8,13 @@
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>SkinNaturals | Homepage</title>
 </head>
 
-<body>
+<body ng-app="shopProduct">
 
     <header>
 
@@ -205,7 +202,7 @@
         </section>
 
         <!-- featured products / best-sellers-->
-        <section class="p-5 m-3">
+        <section class="p-5 m-3 mt-4 mt-lg-5" ng-controller="myCtrl2">
 
             <div class="text-center mb-5">
                 <h3>Featured Products</h3>
@@ -214,51 +211,25 @@
 
             <div id="featuredProducts">
 
-                <a href="product.html" class="text-decoration-none" tabindex="0" target="_self">
+                <div ng-repeat="x in products">
+                    <!-- products= lista di prodotti -->
+                    <div class="featured" ng-if="x.featured === feature">
+                        <!-- $scope.feature= "yes" -->
 
-                    <div class="d-flex justify-content-center">
-                        <img src="img/dayCream.webp" alt="SkinNaturals face day cream">
+                        <a href="product.html" class="text-decoration-none" tabindex="0" target="_self">
+
+                            <div class="d-flex justify-content-center">
+                                <img src="{{x.img}}" alt="SkinNaturals {{x.article}}">
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <h3 class="fs-4">$ {{x.price}}</h3>
+                                <p>{{x.article}}</p>
+                            </div>
+                        </a>
+
                     </div>
-
-                    <div class="text-center mt-3">
-                        <h3 class="fs-4">$ 30.00</h3>
-                        <p>Face Day Cream</p>
-                    </div>
-                </a>
-
-                <a href="product.html" class="text-decoration-none" tabindex="0" target="_self">
-                    <div class="d-flex justify-content-center">
-                        <img src="img/bodyLotion.webp" alt="SkinNaturals body lotion">
-                    </div>
-
-                    <div class="text-center mt-3">
-                        <h3 class="fs-4">$ 25.00</h3>
-                        <p>Body Lotion</p>
-                    </div>
-                </a>
-
-                <a href="product.html" class="text-decoration-none" tabindex="0" target="_self">
-                    <div class="d-flex justify-content-center">
-                        <img src="img/hairConditioner.webp" alt="SkinNaturals hair conditioner">
-                    </div>
-
-                    <div class="text-center mt-3">
-                        <h3 class="fs-4">$ 15.00</h3>
-                        <p>Hair Conditioner</p>
-                    </div>
-                </a>
-
-                <a href="product.html" class="text-decoration-none" tabindex="0" target="_self">
-                    <div class="d-flex justify-content-center">
-                        <img src="img/faceScrub.webp" alt="SkinNaturals face scrub">
-                    </div>
-
-                    <div class="text-center mt-3">
-                        <h3 class="fs-4">$ 11.00</h3>
-                        <p>Face Scrub</p>
-                    </div>
-
-                </a>
+                </div>
 
             </div>
 
@@ -266,7 +237,7 @@
 
     </main>
 
-    <footer class="p-4" ng-app="">
+    <footer class="p-4">
 
         <div class="d-md-flex mx-md-2">
 
@@ -414,7 +385,11 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="angular.js"></script>
 
 </body>
 

@@ -112,7 +112,6 @@ p {
 
 #featuredProducts {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
 }
 
@@ -120,13 +119,12 @@ p {
     width: 100%;
 }
 
-#featuredProducts a:hover,
-.shopProducts a:hover, #shopForm input[type="submit"]:hover {
+.featured:hover,
+.shopProducts>div:hover, #shopForm input[type="submit"]:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     transition: 0.5s ease-out 0s;
 }
-
 
 /* about.html */
 .aboutUsBanner {
@@ -217,8 +215,8 @@ p {
 }
 
 .certifications img{
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .productDescr p {
@@ -313,14 +311,9 @@ input[type=number]::-webkit-outer-spin-button {
         top: 1rem;
     }
 
-    #featuredProducts {
-        gap: 4rem;
-    }
-
     #featuredProducts img {
         width: 60%;
     }
-
 
     #shopForm input[type="submit"] {
         width: 50% !important;
@@ -417,6 +410,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     #featuredProducts {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
     }

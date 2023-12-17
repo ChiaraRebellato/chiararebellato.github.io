@@ -14,7 +14,7 @@
     <title>SkinNaturals | Shop</title>
 </head>
 
-<body>
+<body ng-app="shopProduct">
 
     <header>
 
@@ -142,7 +142,7 @@
 
     <main>
 
-        <section class="shop m-4">
+        <section class="shop m-4" ng-controller="myCtrl2">
 
             <nav aria-label="breadcrumb" role="presentation">
                 <ol class="breadcrumb breadcrumb-chevron">
@@ -172,9 +172,9 @@
                 <button type="button" class="btn px-3" id="displayHair">Hair</button>
             </div>
 
-            <div id="bodyDescription" class="d-none">
-                <h2 class="px-2">Body</h2>
-                <p class="px-3">Our organic and natural body products are specially formulated to respect the natural pH
+            <div id="bodyDescription" class="d-none px-3">
+                <h2>Body</h2>
+                <p>Our organic and natural body products are specially formulated to respect the natural pH
                     levels of
                     your
                     skin, making them suitable for users with sensitive skin conditions. Made with only the finest
@@ -186,9 +186,9 @@
                 </p>
             </div>
 
-            <div id="faceDescription" class="d-none">
-                <h2 class="px-2">Face</h2>
-                <p class="px-3">Our organic and natural face products are free of harmful silicone and parabens. Our
+            <div id="faceDescription" class="d-none px-3">
+                <h2>Face</h2>
+                <p>Our organic and natural face products are free of harmful silicone and parabens. Our
                     soothing face
                     creams cater to all skin types and are made with gentle, plant-based ingredients. We also offer a
                     mild face scrub that is suitable for all skin types. Our products are designed to nourish your skin
@@ -196,9 +196,9 @@
                 </p>
             </div>
 
-            <div id="hairDescription" class="d-none">
-                <h2 class="px-2">Hair</h2>
-                <p class="px-3">Our range of organic and natural hair products offers a safe and effective option for
+            <div id="hairDescription" class="d-none px-3">
+                <h2>Hair</h2>
+                <p>Our range of organic and natural hair products offers a safe and effective option for
                     healthy hair.
                     Our face creams are free from harmful silicone and parabens, ensuring a gentle and nourishing
                     experience. For those with oily scalps, our rosmarine and lemongrass infused products are the
@@ -207,87 +207,33 @@
                 </p>
             </div>
 
+
             <div class="shopProducts py-4">
+                <!-- div contenitore d-grid-->
+                <div ng-repeat="x in products" class="{{x.category}}">
+                    <!-- products= lista di prodotti -->
+                    <!-- associare già la categoria del prodotto iterato per "auto layout" griglia css -->
 
-                <a href="product.html" class="text-decoration-none body" tabindex="0" target="_self">
+                    <a href="product.html?ID={{x.ID}}" class="text-decoration-none" tabindex="0" target="_self">
 
-                    <div class="d-flex justify-content-center">
-                        <img src="img/shopProductDisplay.webp" alt="Product">
-                    </div>
-                    <div class="text-center mt-3">
-                        <h3 class="fs-5">$ 25.00</h3>
-                        <p>Body Lotion</p>
-                    </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="{{x.img}}" alt="SkinNaturals {{x.article}}">
+                        </div>
 
-                </a>
+                        <div class="text-center mt-3">
+                            <h3 class="fs-5">$ {{x.price}}</h3>
+                            <p>{{x.article}}</p>
+                        </div>
+                    </a>
 
-                <a href="product.html" class="text-decoration-none hair" tabindex="0" target="_self">
-
-                    <div class="d-flex justify-content-center">
-                        <img src="img/shopProductDisplay.webp" alt="Product">
-                    </div>
-                    <div class="text-center mt-3">
-                        <h3 class="fs-5">$ 25.00</h3>
-                        <p>Hair Shampoo</p>
-                    </div>
-
-                </a>
-
-                <a href="product.html" class="text-decoration-none face" tabindex="0" target="_self">
-
-                    <div class="d-flex justify-content-center">
-                        <img src="img/shopProductDisplay.webp" alt="Product">
-                    </div>
-                    <div class="text-center mt-3">
-                        <h3 class="fs-5">$ 25.00</h3>
-                        <p>Face Mask</p>
-                    </div>
-
-                </a>
-
-                <a href="product.html" class="text-decoration-none body" tabindex="0" target="_self">
-
-                    <div class="d-flex justify-content-center">
-                        <img src="img/shopProductDisplay.webp" alt="Product">
-                    </div>
-                    <div class="text-center mt-3">
-                        <h3 class="fs-5">$ 25.00</h3>
-                        <p>Body Shower Gel</p>
-                    </div>
-
-                </a>
-
-                <a href="product.html" class="text-decoration-none face" tabindex="0" target="_self">
-
-                    <div class="d-flex justify-content-center">
-                        <img src="img/shopProductDisplay.webp" alt="Product">
-                    </div>
-                    <div class="text-center mt-3">
-                        <h3 class="fs-5">$ 25.00</h3>
-                        <p>Face Scrub</p>
-                    </div>
-
-                </a>
-
-                <a href="product.html" class="text-decoration-none hair" tabindex="0" target="_self">
-
-                    <div class="d-flex justify-content-center">
-                        <img src="img/bodyLotion.webp" alt="Product">
-                    </div>
-                    <div class="text-center mt-3">
-                        <h3 class="fs-5">$ 25.00</h3>
-                        <p>Hair Mask</p>
-                    </div>
-
-                </a>
-
+                </div>
             </div>
 
         </section>
 
     </main>
 
-    <footer class="p-4" ng-app="">
+    <footer class="p-4">
 
         <div class="d-md-flex mx-md-2">
 
@@ -435,12 +381,13 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="angular.js"></script>
 
 </body>
 

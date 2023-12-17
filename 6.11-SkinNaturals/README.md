@@ -20,6 +20,7 @@ Website for fictional skincare company. As of today the website simulates an e-c
 - Mobile First
 - Cross platform
 - Client-side Form Validation (Angular JS)
+- Product info retrieval with Angular JS (index.html, shop.html, product.html)
 
 
 ## Tech Stack
