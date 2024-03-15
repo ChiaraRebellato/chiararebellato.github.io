@@ -20,12 +20,12 @@
 
 @font-face {
   font-family: "Cracker";
-  src: url("17.01-watchNext/fonts/Aorta\ Cracker.ttf")
+  src: url(17.01-watchNext/fonts/Aorta\ Cracker.ttf)
 }
 
 @font-face {
   font-family: Coolvetica;
-  src: url("react/jammming/public/fonts/coolvetica.otf");
+  src: url(fonts/coolvetica.otf);
 }
 
 
