@@ -1,0 +1,306 @@
+@font-face {
+  font-family: Noka;
+  src: url(fonts/NokaTrial-Light.otf);
+}
+
+@font-face {
+  font-family: Nexa;
+  src: url(20.10-longLiveVinyls/fonts/NexaRustScript/NexaRustScriptB-Trial-3.ttf);
+}
+
+@font-face {
+  font-family: Pearl;
+  src: url(6.11-SkinNaturals/fonts/TAN-PEARL.otf);
+}
+
+@font-face {
+  font-family: Lust;
+  src: url(17.11-easyBaking/fonts/lust-display-didone.otf);
+}
+
+@font-face {
+  font-family: "Cracker";
+  src: url("17.01-watchNext/fonts/Aorta\ Cracker.ttf")
+}
+
+@font-face {
+  font-family: Coolvetica;
+  src: url("react/jammming/public/fonts/coolvetica.otf");
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+body {
+  background-image: url(img/background.png);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+
+header,
+a {
+  font-family: Noka !important;
+}
+
+.prj {
+  background-color: rgb(249, 248, 248);
+  width: 15rem;
+  height: 20rem;
+}
+
+#projects {
+  display: grid;
+  justify-items: center;
+  background-color: rgba(249, 248, 248, 0.6);
+}
+
+#projects div h2 {
+  font-size: 1.5rem;
+}
+
+#palette2,
+#palette3,
+#palette4 {
+  position: relative;
+  top: 0.5rem;
+}
+
+.description {
+  height: 5rem;
+}
+
+.btn {
+  background-color: rgb(241, 237, 234);
+  width: 8rem;
+}
+
+.btn:hover {
+  background-color: rgb(241, 237, 234);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.5s ease-out 0s;
+}
+
+/* project #1 */
+
+#project1 h2 {
+  font-family: "Homemade Apple", cursive;
+}
+
+#palette1>:nth-child(1) {
+  background-color: #F9F0DA99;
+  height: 0.5rem;
+  width: 100%
+}
+
+#palette1>:nth-child(2) {
+  background-color: #A3C3C4;
+  height: 0.5rem;
+  width: 100%
+}
+
+#palette1>:nth-child(3) {
+  background-color: #468189;
+  height: 0.5rem;
+  width: 100%
+}
+
+#palette1>:nth-child(4) {
+  background-color: #031926;
+  height: 0.5rem;
+  width: 100%
+}
+
+
+/* project #2 */
+#project2 h2 {
+  font-family: Nexa;
+}
+
+#palette2>:nth-child(1) {
+  background-color: #eee6dd;
+  height: 0.5rem;
+  width: 100%
+}
+
+#palette2>:nth-child(2) {
+  background-color: #cfbeb0;
+  height: 0.5rem;
+  width: 100%
+}
+
+#palette2>:nth-child(3) {
+  background-color: #963645;
+  height: 0.5rem;
+  width: 100%
+}
+
+#palette2>:nth-child(4) {
+  background-color: #19191a;
+  height: 0.5rem;
+  width: 100%
+}
+
+
+/* project #3*/
+#project3 h2 {
+  font-family: Pearl;
+}
+
+#palette3>:nth-child(1) {
+  background-color: #ececec;
+  height: 0.5rem;
+  width: 100%
+}
+
+#palette3>:nth-child(2) {
+  background-color: #dee3ee99;
+  height: 0.5rem;
+  width: 100%
+}
+
+#palette3>:nth-child(3) {
+  background-color: #dbeae2;
+  height: 0.5rem;
+  width: 100%
+}
+
+
+/* project 4 */
+#project4 h2 {
+  font-family: Lust;
+}
+
+#palette4>:nth-child(1) {
+  background-color: rgb(183, 173, 160);
+  height: 0.5rem;
+  width: 100%
+}
+
+#palette4>:nth-child(2) {
+  background-color: rgb(167, 156, 142);
+  height: 0.5rem;
+  width: 100%
+}
+
+#palette4>:nth-child(3) {
+  background-color: rgb(37, 33, 34);
+  height: 0.5rem;
+  width: 100%
+}
+
+/* project 5 */
+#project5 h2{
+  font-family: Noka;
+}
+
+#palette5>:nth-child(1) {
+  background-color: rgb(0, 0, 0);
+  height: 0.5rem;
+  width: 100%
+}
+
+/* project 6 */
+#project6 h2{
+  font-family: Cracker;
+}
+
+#palette6>:nth-child(1) {
+  background-color: #ede8d0;
+  height: 0.5rem;
+  width: 100%
+}
+
+#palette6>:nth-child(2) {
+  background-color: #c12e3d;
+  height: 0.5rem;
+  width: 100%
+}
+
+#palette6>:nth-child(3) {
+  background-color: #223e50;
+  height: 0.5rem;
+  width: 100%
+}
+
+/* project 7 */
+#project7 h2{
+  font-family: Coolvetica;
+}
+
+#palette7>:nth-child(1) {
+  background-color: #2b0354;
+  background-image: linear-gradient(to right, rgb(226, 131, 48), hsla(304, 87%, 56%, 1),hsla(256, 93%, 55%, 1));
+  height: 0.5rem;
+  width: 100%
+}
+
+
+@media only screen and (min-width: 576px) {
+  .prj {
+    width: 20rem;
+    height: 25rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  #projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+
+  #projects h2 {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem !important;
+  }
+
+  .prj {
+    border: 1px solid rgb(212, 214, 214);
+  }
+}
+
+@media only screen and (min-width: 1070px) {
+
+  body {
+    background-size: cover;
+  }
+
+  #projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  #projects {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+  }
+
+}

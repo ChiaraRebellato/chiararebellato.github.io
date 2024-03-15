@@ -1,0 +1,51 @@
+@font-face {
+  font-family: Noka;
+  src: url(fonts/NokaTrial-Light.otf);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+header h1 {
+  font-family: Noka;
+}
+
+body {
+  background: black;
+  background-repeat: no-repeat !important;
+  background-size: 100% !important;
+}
+
+#container {
+  background-color: rgba(249, 248, 248, 0.3);
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width:768px) {
+  #placeholder{
+      font-size: 1.5rem !important;
+  }
+  .btn {
+      width: 15rem;
+  }
+}

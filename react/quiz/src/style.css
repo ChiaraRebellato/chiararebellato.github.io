@@ -1,0 +1,36 @@
+html, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+*{
+    color: antiquewhite;
+    background-color: rgb(14, 14, 14);
+}
+*/
+
+body{
+    font-size: 16px;
+}
+
+#successModal{
+    background-image: url(img/success2.webp);
+    background-size: 130%;
+    background-position: bottom center;
+}
+
+#failModal{
+    background-image: url(img/fail2.webp);
+    background-size: 80%;
+    background-position: bottom left -1.5rem;
+}
+
+#successModal, #failModal{
+    font-size: 1.15rem;
+}
+
+#successModal, #failModal{
+    background-repeat: no-repeat;
+}

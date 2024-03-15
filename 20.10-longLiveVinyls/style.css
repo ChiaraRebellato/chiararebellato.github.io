@@ -1,0 +1,148 @@
+@font-face {
+  font-family: Rockabye;
+  src: url(fonts/rockabye-font/RockabyeRegular-K7Zqy.otf);
+}
+
+@font-face {
+  font-family: Coolvetica;
+  src: url(fonts/coolvetica/coolvetica\ rg.otf);
+}
+
+@font-face {
+  font-family: Nexa;
+  src: url(fonts/NexaRustScript/NexaRustScriptB-Trial-3.ttf);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+body {
+  background-color: #19191a;
+  color: #eee6dd;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-link{
+  color: #cfbeb0 !important;
+}
+
+.nav-link:hover {
+  color: #eee6dd !important;
+}
+
+.navbar-brand {
+  font-family: Nexa;
+  font-size: 2.5rem;
+  color: #963645;
+  margin: 0 !important;
+}
+
+.navbar-brand:hover{
+  color: #963645;
+}
+
+header h1 {
+  font-family: Rockabye;
+}
+
+header {
+  background-image: url(img/vinyl.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: right -4rem top 7.5rem;
+  height: 430px;
+}
+
+header h1 {
+  position: relative;
+  top: 4rem;
+  width: 75%;
+}
+
+h2 {
+  font-family: Coolvetica;
+}
+
+.aboutImg img {
+  border: 0.2rem solid #a5978c;
+  padding: 0.5rem;
+}
+
+.carousel-caption {
+  width: 10rem;
+  position: relative;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+#contacts a{
+    color: #eee6dd;
+}
+
+#contacts,
+footer {
+  background-color: #6a2630;
+}
+
+footer p, footer a{
+color: #a5978c;
+}
+
+footer a svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width:500px) {
+
+  header{
+    background-size: 45%;
+    height: 490px;
+  }
+  .aboutImg img {
+    border: 0.5rem solid #a5978c;
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (min-width:900px){
+
+  header {
+    background-size: contain;
+    background-position: right -4rem top -4rem;
+  }
+
+  header h1{
+    margin-left: 5rem;
+  }
+
+  .aboutImg img {
+    width: 30rem;
+  }
+
+  .carousel-inner{
+    width: 50% !important;
+  }
+}

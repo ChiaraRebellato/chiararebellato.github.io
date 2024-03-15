@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "Cracker";
+    src: url(fonts/Aorta\ Cracker.ttf);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: #223e50;
+    overflow-x: hidden;
+    background-image: url(img/clapperboard.svg), url(img/popcorn.svg);
+    background-repeat: no-repeat;
+    background-size: 17rem, 25rem;
+    background-position: bottom -2.5rem left -0.5rem, bottom -2.5rem left 5.7rem;
+    /* box-shadow: inset 0 0 0 1000px rgba(218, 218, 218, 0.2); */
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+main {
+    padding-bottom: 25rem;
+}
+
+h1:not(.modal-title),
+h1>a {
+    font-family: "Cracker";
+    font-size: 4.5rem;
+    /* color: #ede8d0; */
+    color: rgb(193, 46, 61);
+    /* font-weight: bold;
+    -webkit-text-stroke: 1px rgb(0, 0, 0); */
+    text-shadow: #ede8d0 3px 2px;
+    line-height: 4rem;
+}
+
+h1>span {
+    font-size: 5rem;
+}
+
+header>span,
+section div>h2,
+section div>h3,
+p,
+label,
+#buttonsUnfolded>h4 {
+    color: #ede8d0;
+}
+
+header span>a {
+    color: #c12e3d;
+}
+
+section>p {
+    font-size: 1.3rem !important;
+}
+
+#modalBtn>span{
+    font-size: 0.8rem;
+}
+
+.modal-body{
+    font-size: 0.8rem !important;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+.form-select {
+    width: auto !important;
+}
+
+#indexButton,
+#buttonsContainer>button, #dismissModal {
+    font-family: Cracker;
+    color: #c12e3d;
+}
+
+/* results.html */
+
+#infoContainer>p {
+    font-weight: 300;
+}
+
+section div>h3 {
+    font-weight: 400;
+}
+
+#reviews {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+#reviews>span {
+    color: #ede8d0;
+    font-size: 1.1rem;
+}
+
+#reviews>img {
+    width: 2rem;
+    margin-left: 0.6rem;
+    margin-top: -0.2rem;
+    filter:
+        drop-shadow(2px -1px 0px #ede8d0) drop-shadow(1px 1px 0px #ede8d0)
+}
+
+.btn:disabled {
+    border: none !important;
+}
+
+#buttonsContainer>button {
+    margin: auto 0.5rem;
+    padding: 1rem;
+    width: 8.5rem;
+    font-size: 1.1rem;
+}
+
+#buttonsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#buttonsUnfolded {
+    margin: auto 3rem;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#buttonsUnfolded>h4 {
+    font-size: 1.5rem;
+    text-shadow: #c12e3d 3px 2px;
+}
+
+#buttonsUnfolded>p,
+#buttonsUnfolded>a {
+    font-weight: 300;
+}
+
+#buttonsUnfolded>a {
+    text-align: center;
+}
+
+@media only screen and (min-width: 450px) {
+
+    body {
+        background-size: 16rem, 21rem;
+        background-position: bottom -2.5rem left -0.5rem, bottom -2.9rem left 9.3rem;
+
+    }
+
+    h1,
+    h1>span {
+        font-size: 4rem !important;
+    }
+
+    section>p {
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    body {
+        background-size: 17.5rem, 23rem;
+        background-position: right 14rem bottom -2rem, right -4rem bottom -2rem;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 4.8rem !important;
+    }
+
+    #modalBtn>span{
+        font-size: 1rem;
+    }
+
+    .modal-body{
+        font-size: 1rem !important;
+    }
+
+    #indexButton{
+        font-size: 1.2rem;
+    }
+
+    #infoContainer {
+        margin-right: 4.5rem !important;
+        margin-left: 4.5rem !important;
+    }
+
+    #buttonsContainer>button {
+        width: 11rem;
+        font-size: 1.3rem;
+    }
+
+}

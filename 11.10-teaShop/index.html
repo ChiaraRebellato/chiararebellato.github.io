@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <meta name="Author" content="Chiara Rebellato">
+        <meta name="Description" content="The Tea Cozy Shop Website">
+        <title>The Tea Cozy Shop</title>
+    </head>
+    <body>
+
+        <header>
+            <!-- header contenitore flex per allineamento asse x e y -->
+
+            <h1><a href="#top" tabindex="0" target="_self">Tea Cozy</a></h1>
+
+            <nav role="menu" aria-label="Menu">
+                <!-- contenitore flex degli elementi del menu; 
+                    gli elementi del menu sono posizionati inline e a destra -->
+
+                <ul>
+                    <li><a href="#mission" tabindex="0" target="_self">Mission</a></li>
+                    <li><a href="#teaSelection" tabindex="0" target="_self">Featured Tea</a></li>
+                    <li><a href="#location" tabindex="0" target="_self">Locations</a></li>
+                    <li><a href="#contact" tabindex="0" target="_self">Contact</a></li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <main>
+            <section id="mission">
+                <!-- tutte le <section> sono contenitori flex per allineamento asse x e y -->
+
+                <div class="text">
+                    <!-- flex-item (figlio del div 'mission') inline -->
+
+                    <!-- gli elementi al suo interno rimangono con i propri comportamenti (=block elements)
+                                in quanto il div 'text' non ha la proprietà display= flex -->
+                    <h2>Our Mission</h2>
+
+                    <h4>Handpicked, Artisanally Curated, Free Range,
+                        Sustainable, Small Batch, Fair Trade, Organic
+                        Tea</h4>
+
+                </div>
+
+            </section>
+
+            <section id="teaSelection">
+                <!-- tutte le <section> sono contenitori flex per allineamento asse x e y - ID per ancora menu -->
+
+                <div id="teaOfTheMonth">
+                    <!-- flex-item (inline dal padre) e contemporaneamente contenitore flex del div sottostante; per settare dimensioni -->
+
+                    <div>
+                        <!-- flex-item (inline dal padre) - contenitore di altri elementi; NON è flex (rimangono block) -->
+
+                        <div class="text">
+                            <!-- gli elementi al suo interno rimangono con i propri comportamenti (= block elements)
+                                    in quanto il div 'text' non ha la proprietà display= flex -->
+                            <h2>Tea of the Month</h2>
+                            <h4>What's Steeping at The Tea Cozy?</h4>
+                        </div>
+
+                        <div class="images">
+                            <!-- contenitore flex delle img -->
+
+                            <figure>
+                                <img src="img/img-berryblitz.jpg"
+                                    alt="berry blitz tea">
+                                <figcaption>Fall Berry Blitz Tea</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="img/img-spiced-rum.jpg"
+                                    alt="spiced rum tea">
+                                <figcaption>Spiced Rum Tea</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="img/img-donut.jpg" alt="donuts">
+                                <figcaption>Seasonal Donuts</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="img/img-myrtle-ave.jpg"
+                                    alt="myrtle ave tea">
+                                <figcaption>Myrtle Ave Tea</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="img/img-bedford-bizarre.jpg"
+                                    alt="bedford bizarre tea">
+                                <figcaption>Bedford Bizzre Tea</figcaption>
+                            </figure>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="location">
+                <!-- tutte le <section> sono contenitori flex; div che contiene l'immagine di sfondo (CSS) -->
+
+                <div id="content">
+                    <!-- contenitore block -->
+
+                    <h2>Locations</h2>
+
+                    <div id="flexLocation">
+                        <!-- contenitore flex - div 'flex items' disposti inline -->
+
+                        <div id="downtown" class="locationtext">
+                            <h3>Downtown</h3>
+                            <p>384 West 4th St <br>
+                                Suite 108 <br>
+                                Portland, Maine</p>
+                        </div>
+
+                        <div id="bayside" class="locationtext">
+                            <h3>East Bayside</h3>
+                            <p>3433 Phisherman's Avenue <br>
+                                (Northwest Corner) <br>
+                                Portland, Maine</p>
+                        </div>
+
+                        <div id="oakdale" class="locationtext">
+                            <h3>Oakdale</h3>
+                            <p>515 Crescent Avenue <br>
+                                Second Floor <br>
+                                Portland, Maine</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <!-- tutte le <section> sono contenitori flex -->
+
+                <div id="contact">
+                    <!-- contenitore flex - div 'flex items' disposti inline -->
+
+                    <h2>The Tea Cozy</h2>
+                    <a href="mailto:contact@theteacozycom"><h5>contact@theteacozycom</h5></a>
+                    <a href="tel:917-555-8904"><h5>917-555-8904</h5></a>
+                    
+                </div>
+            </section>
+
+            <footer>
+                <p><strong>© 2023 The Tea Cozy Company</strong></p>
+            </footer>
+        </main>
+
+    </body>
+</html>

@@ -1,0 +1,659 @@
+@font-face {
+    font-family: Lust;
+    src: url(fonts/lust-display-didone.otf);
+}
+
+@font-face {
+    font-family: Fino;
+    src: url(fonts/Fino\ Sans\ Regular.otf);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Raleway;
+    color: rgb(37, 33, 34);
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, ">") !important;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+legend {
+    font-family: Montserrat;
+}
+
+.navbar-brand,
+#brand {
+    font-family: Lust;
+    color: rgb(167, 156, 142);
+}
+
+.navbar-brand:hover {
+    color: rgb(167, 156, 142);
+}
+
+.navbar-toggler svg {
+    color: rgb(167, 156, 142);
+}
+
+.navbar-toggler:focus,
+.btn:focus {
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+.nav-link.active {
+    text-decoration-line: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.02rem;
+}
+
+.navbar-nav .nav-item:last-child a,
+input[type="submit"] {
+    background-color: rgb(37, 33, 34);
+    color: white;
+}
+
+.navbar-nav .nav-item:last-child a:hover,
+input[type="submit"]:hover {
+    background-color: white;
+    color: rgb(37, 33, 34);
+    background-image: linear-gradient(rgb(183, 173, 160), rgb(183, 173, 160)),
+        linear-gradient(rgb(183, 173, 160), rgb(183, 173, 160)),
+        linear-gradient(rgb(183, 173, 160), rgb(183, 173, 160)),
+        linear-gradient(rgb(183, 173, 160), rgb(183, 173, 160)),
+        linear-gradient(transparent, transparent);
+
+    background-repeat: no-repeat;
+    background-size: 1px 50%, 50% 1px, 1px 50%, 50% 1px,
+        calc(100% - 8px) calc(100% - 8px);
+    background-position: left bottom, left bottom, right top, right top, 4px 4px;
+}
+
+.headerBanner {
+    height: 60vh;
+    width: 100%;
+}
+
+.headerBanner h2 {
+    color: rgb(37, 33, 34);
+    text-transform: uppercase;
+}
+
+#homepageVideo {
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.video {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+&::-webkit-media-controls {
+    display: none !important;
+}
+
+
+#homepageVideo h1 {
+
+    font-family: Lust;
+
+}
+
+.carousel-caption {
+    width: 10rem;
+    position: relative;
+    right: 0;
+    left: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(227, 221, 209) !important;
+}
+
+.indexChefs {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#chefInfo1,
+#chefInfo2,
+#chefInfo3,
+#chefInfo4 {
+    margin: 0 !important;
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+}
+
+.chefsBtn {
+    position: relative;
+    top: -1rem;
+    width: 50%;
+    height: 4rem;
+
+    background-color: rgb(227, 221, 209);
+    background-image: linear-gradient(rgb(183, 173, 160), rgb(183, 173, 160)),
+        linear-gradient(rgb(183, 173, 160), rgb(183, 173, 160)),
+        linear-gradient(rgb(183, 173, 160), rgb(183, 173, 160)),
+        linear-gradient(rgb(183, 173, 160), rgb(183, 173, 160)),
+        linear-gradient(transparent, transparent);
+
+    background-repeat: no-repeat;
+    background-size: 2px 50%, 50% 2px, 2px 50%, 50% 2px,
+        calc(100% - 8px) calc(100% - 8px);
+    background-position: left bottom, left bottom, right top, right top, 4px 4px;
+    margin: 0 auto;
+    color: rgb(37, 33, 34) !important;
+
+}
+
+.chefsBtn:hover {
+    color: rgb(165, 152, 142) !important;
+}
+
+#chef1 {
+    background-image: url(img/amaury.webp);
+}
+
+#chef2 {
+    background-image: url(img/cedric.webp);
+}
+
+#chef3 {
+    background-image: url(img/iginio.webp);
+}
+
+#chef4 {
+    background-image: url(img/yohann.webp);
+}
+
+#chef1,
+#chef2,
+#chef3,
+#chef4 {
+    background-size: cover;
+    height: 55vh;
+    width: 45vh;
+}
+
+#index_classInfo img {
+    width: 100%;
+}
+
+.index_classInfoPar {
+    background-color: rgb(227, 221, 209);
+}
+
+.index_classInfoPar_btn {
+    width: 80% !important;
+    height: 3rem;
+    margin: 0 auto;
+    background-color: rgb(37, 33, 34);
+    color: white;
+}
+
+.index_classInfoPar_btn:hover, .responseBtn:hover {
+    background-color: transparent;
+    color: rgb(37, 33, 34) !important;
+    background-image: linear-gradient(rgb(183, 173, 160), rgb(183, 173, 160)),
+        linear-gradient(rgb(183, 173, 160), rgb(183, 173, 160)),
+        linear-gradient(rgb(183, 173, 160), rgb(183, 173, 160)),
+        linear-gradient(rgb(183, 173, 160), rgb(183, 173, 160)),
+        linear-gradient(transparent, transparent);
+
+    background-repeat: no-repeat;
+    background-size: 1px 50%, 50% 1px, 1px 50%, 50% 1px,
+        calc(100% - 8px) calc(100% - 8px);
+    background-position: left bottom, left bottom, right top, right top, 4px 4px;
+}
+
+.index_classInfoPar_btn:hover a {
+    color: rgb(37, 33, 34) !important;
+}
+
+.reviews {
+    margin-top: 6rem !important;
+}
+
+.reviews h2 {
+    font-size: 1.3rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #a5978c;
+    position: relative;
+    top: 2rem;
+}
+
+.quoteMarks {
+    position: relative;
+    bottom: 0.6rem;
+}
+
+
+/*aboutUs.html*/
+
+#aboutBanner {
+    background-image: url(img/aboutUs.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.about>:first-child,
+.classDescr>:first-child {
+    line-height: 1.9;
+}
+
+.team {
+    background-color: rgba(243, 239, 232, 0.6);
+    text-align: justify;
+}
+
+.team p {
+    line-height: 1.7;
+}
+
+
+/* class.html */
+#classBanner {
+    background-image: url(img/classHeader.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.classInfo {
+    background-color: rgb(227, 221, 209);
+}
+
+.classTopics p {
+    text-align: justify;
+}
+
+
+/* contact.html */
+
+#contactBanner {
+    background-image: url(img/location.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.contactSection a {
+    color: rgb(167, 156, 142);
+}
+
+input[type="submit"]:disabled {
+    background-color: rgb(186, 184, 184) !important;
+    color: gray;
+}
+
+input[type="submit"] {
+    padding: 1rem 1.2rem !important;
+}       
+
+.text-danger{
+    font-size: 0.9rem !important;
+}
+
+/* enroll.html */
+
+.form-floating>label {
+    padding: 1rem 0 !important;
+}
+
+.enrollSection p {
+    text-align: justify;
+}
+
+.faqs,
+.faqs.collapsing,
+.faqs.collapse.show {
+    max-width: 43vh !important;
+    min-width: 43vh !important;
+}
+
+hr {
+    width: 15%;
+}
+
+.btn {
+    --bs-btn-focus-box-shadow: none !important;
+}
+
+.faqsbtn .btn svg {
+    color: rgb(183, 173, 160);
+}
+
+select {
+    border-color: #a5978c !important;
+}
+
+
+/* response.html */
+.responseBtn {
+    height: 3rem;
+    margin: 0 auto;
+    background-color: rgb(37, 33, 34);
+    color: white;
+}
+
+footer {
+    background-color: rgb(37, 33, 34);
+}
+
+.social svg,
+footer p {
+    color: #a5978c !important;
+}
+
+.social svg {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.footerNav a {
+    font-size: 0.9rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width:500px) {
+
+    .chefs h2,
+    .reviews h2,
+    .class h2 {
+        padding: 0 1rem;
+    }
+
+    .reviews h2 {
+        font-size: calc(1.325rem + .9vw);
+    }
+
+    .chefs hr,
+    .reviews hr,
+    .class hr {
+        display: inline !important;
+    }
+
+    .dash {
+        display: none !important;
+    }
+
+    .faqs,
+    .faqs.collapsing,
+    .faqs.collapse.show {
+        max-width: 60vh !important;
+        min-width: 60vh !important;
+    }
+
+    .faqsbtn svg {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .chefs {
+        margin-bottom: 7rem !important;
+    }
+
+    .chefsBtn {
+        top: 2rem;
+        font-size: 1.2rem;
+    }
+
+
+    .index_classInfoPar div p {
+        font-size: 1.1rem;
+    }
+
+    .index_classInfoPar_btn {
+        width: 60% !important;
+        height: 4rem;
+        font-size: 1rem;
+    }
+
+    .carousel-item svg {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .inputText .form-floating {
+        width: 70%;
+    }
+
+    .selectform div {
+        width: 100%;
+    }
+
+    #required {
+        position: relative;
+        top: -5rem;
+        left: 5rem;
+    }
+
+    .faqs,
+    .faqs.collapsing,
+    .faqs.collapse.show {
+        max-width: 90vh !important;
+        min-width: 90vh !important;
+    }
+
+    .faqs {
+        padding: 0.5rem;
+    }
+
+    .faqSection {
+        padding-bottom: 4rem;
+    }
+
+    .social svg {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin: auto 0.3rem;
+    }
+
+
+    .formResponse{
+        height: 60vh;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        background-color: white;
+        width: 100%;
+    }
+
+    #homepageVideo,
+    .headerBanner,
+    .faqSection,
+    .enrollSection,
+    .contactSection {
+        position: relative;
+        top: 7rem;
+    }
+
+    .privacySection,
+    .termsSection {
+        position: relative;
+        top: 5rem;
+    }
+
+    .mainRelative {
+        margin-top: 8rem;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+
+    .chefs {
+        margin-bottom: 8rem !important;
+    }
+
+    .indexChefs {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .chefsBtn {
+        width: 30%;
+        height: 5rem;
+    }
+
+    #index_classInfo img {
+        width: 75%;
+    }
+
+    .index_classInfoPar {
+        height: 30%;
+        width: 50%;
+        position: relative;
+        float: right;
+        top: -9rem;
+    }
+
+    .index_classInfoPar div p {
+        font-size: 1.2rem;
+    }
+
+    .index_classInfoPar_btn {
+        font-size: 1.2rem;
+    }
+
+    .about>:first-child,
+    .classInfo,
+    .classDescr>:first-child,
+    .classTopics p,
+    .enrollSection>:nth-child(3) {
+        font-size: 1.1rem;
+    }
+
+    .class {
+        margin-bottom: 0 !important;
+    }
+
+    .reviews {
+        margin-top: 0 !important;
+        margin-bottom: 5rem !important;
+    }
+
+    .carousel-inner {
+        padding-right: 5rem !important;
+        padding-left: 5rem !important;
+    }
+
+    .carousel-item {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+
+    .carousel-item svg {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .reviews p {
+        font-size: 1.1rem;
+    }
+
+    .teamContainer {
+        width: 80%;
+    }
+
+    .faqs,
+    .faqs.collapsing,
+    .faqs.collapse.show {
+        max-width: 120vh !important;
+        min-width: 120vh !important;
+    }
+
+    .faqsbtn p {
+        font-size: 1.2rem;
+    }
+
+    .faqsbtn svg {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+@media only screen and (min-width:1440px) {
+
+    #index_classInfo img {
+        width: 60%;
+    }
+
+    .classTopics {
+        margin: auto 6rem !important;
+    }
+
+    .faqs,
+    .faqs.collapsing,
+    .faqs.collapse.show {
+        max-width: 150vh !important;
+        min-width: 150vh !important;
+        font-size: 1.1rem;
+    }
+
+    fieldset {
+        padding: 0 10rem !important;
+    }
+
+}
+
+@supports (-webkit-touch-callout: inherit) {
+    #aboutBanner, #classBanner, #contactBanner   {
+    background-attachment: scroll;
+    }
+  }

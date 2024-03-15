@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta name="Author" content="Chiara Rebellato">
+    <meta name="Description" content="Chiara's Random Lyrics Generator">
+    <title>Chiara's Random Lyrics Generator</title>
+</head>
+
+<body class="min-vh-100">
+
+    <a href="#main" class="skip" title="Skip to main content" tabindex="-1" target="_self">Skip to main content</a>
+
+    <header>
+        <a class="text-decoration-none" href="index.html" tabindex="0" target="_self">
+            <h1 class="p-5 text-center text-white fw-bold">Random Lyrics Generator</h1>
+        </a>
+    </header>
+
+    <main>
+        <section class="d-flex justify-content-center">
+            <div id="container" class="py-5 w-75 text-center">
+                <div>
+                    <h2 id="placeholder" class="text-white fw-lighter fs-5 mx-3">Discover some of my favorites lyrics</h2>
+                    <div class="d-md-flex align-items-center justify-content-center px-md-5">
+                        <img id="artwork" class="img-fluid mb-3 px-3" alt="">
+                        <div>
+                            <p class="p-3" id="lyrics"></p>
+                            <p class="fst-italic" id="artist"></p>
+                        </div>
+                    </div>
+                </div>
+                <button id="generator" class="btn btn-dark rounded-0 mt-3">Click me!</button>
+                <p class="fst-italic text-white fw-light mt-2 mb-0 pb-0">Or press the Enter key</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-3 mt-3 fixed-bottom">
+        <p class="text-center text-white fw-lighter">Made with lots of patience by Chiara</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
